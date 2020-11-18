@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-size:100%;
+    font-size:1em;
+}
+
+.brand-title {
+    margin: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.brand-title h1{
+    font-family: 'Overpass', sans-serif;
+    margin-left: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.brand-title img{
+    width: 70px;
+    height: 70px;
+    margin: 0px 0px 0.5em 0.5rem; 
+    border-radius: 50%;
+}
+
+.logo {
+    width: 1em;
+    height: 1em;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #014757 ;
+    color: #f0f0f0;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-links li {
+    list-style: none;
+    transition: background-color 0.5s ease;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #f0f0f0;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #025F74;
+    transition: background-color 0.5s ease;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color:#f0f0f0;
+    border-radius: 10px;
+}
+
+.shopping-cart {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    border: #f0f0f0 1px solid;
+    border-radius: 100%;
+    padding: 9px 13px 7px 12px;
+    margin: 0px 1em;
+    transition: background-color 0.5s ease;
+}
+
+.shopping-cart:hover {
+    background-color: #0286A4;
+    transition: background-color 0.5s ease;
+}
+
+
+footer{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #014757;
+    color: #f0f0f0;
+}
+
+footer nav ul li{
+    list-style: none;
+    padding: 0px;
+} 
+
+footer nav ul li a{
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.rights{
+    position: relative;
+    margin-left: 8em;
+}
+
+.social nav ul{
+    display: flex;
+}
+
+.social nav ul li a span{
+    border: 2px solid #fff;
+    border-radius: 100%;
+    margin: 0px 1em;
+    font-size: 25px;
+}
+
+.facebook span{
+    padding: 12px 16px 12px 16px;
+    transition: background-color 0.5s ease;
+}
+
+.gmail span{
+    padding: 0.5em;
+    transition: background-color 0.5s ease;
+}
+
+.whatsapp span{
+    padding: 12px 14px 12px 14px;
+    transition: background-color 0.5s ease;
+}
+
+.gmail span:hover, .whatsapp span:hover, .facebook span:hover{
+    background-color: black;
+    transition: background-color 0.5s ease;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
