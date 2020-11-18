@@ -84,6 +84,10 @@ body {
     height: 21px;
 }
 
+.toggle-cart {
+    display: none;
+}
+
 .toggle-button .bar {
     height: 3px;
     width: 100%;
@@ -118,10 +122,13 @@ footer{
 
 footer nav ul li{
     list-style: none;
-    padding: 0px;
+    text-align:center;
+    padding: 4px;
+
 } 
 
 footer nav ul li a{
+    display: inline-block;
     color: #f0f0f0;
     text-decoration: none;
 }
@@ -138,7 +145,7 @@ footer nav ul li a{
 .social nav ul li a span{
     border: 2px solid #fff;
     border-radius: 100%;
-    margin: 0px 1em;
+    margin: 0px 0.5em;
     font-size: 25px;
 }
 
@@ -168,6 +175,10 @@ footer nav ul li a{
         align-items: flex-start;
     }
 
+    .shopping-cart{
+        display: none;
+    }
+
     .toggle-button {
         display: flex;
     }
@@ -192,5 +203,17 @@ footer nav ul li a{
 
     .navbar-links.active {
         display: flex;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer nav ul li{
+        margin-right: 3em;
+    }
+
+    .rights{
+        margin: 0px;
     }
 }
