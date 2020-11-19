@@ -76,16 +76,12 @@ body {
 .toggle-button {
     position: absolute;
     top: 0.75rem;
-    right: 1rem;
+    right: 4rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
     height: 21px;
-}
-
-.toggle-cart {
-    display: none;
 }
 
 .toggle-button .bar {
@@ -111,7 +107,6 @@ body {
     transition: background-color 0.5s ease;
 }
 
-
 footer{
     display:flex;
     align-items:center;
@@ -120,11 +115,14 @@ footer{
     color: #f0f0f0;
 }
 
+.footer-navbar nav ul{
+    display: flex;
+}
+
 footer nav ul li{
     list-style: none;
     text-align:center;
     padding: 4px;
-
 } 
 
 footer nav ul li a{
@@ -140,12 +138,13 @@ footer nav ul li a{
 
 .social nav ul{
     display: flex;
+    margin-right: 2em;
 }
 
 .social nav ul li a span{
     border: 2px solid #fff;
     border-radius: 100%;
-    margin: 0px 0.5em;
+    margin: 0px 0.2em;
     font-size: 25px;
 }
 
@@ -175,8 +174,28 @@ footer nav ul li a{
         align-items: flex-start;
     }
 
+    .brand-title h1{
+        font-size: 1.2em;
+        margin-left: 0.5em;
+        letter-spacing: 0px;
+    }
+    
+    .brand-title img{
+        margin: 0px 0px 0.2em 0.2rem; 
+        width: 50px;
+        height: 50px;
+    }
+
     .shopping-cart{
-        display: none;
+        position: absolute;
+        top: 0.4rem;
+        right: 0px;
+        display: flex;
+        font-size: 20px;
+        border: #f0f0f0 1px solid;
+        border-radius: 100%;
+        padding: 7px 6px 5px 5px;
+        margin: 0px 10px 0px 0px;
     }
 
     .toggle-button {
@@ -213,7 +232,25 @@ footer nav ul li a{
         margin-right: 3em;
     }
 
+    footer section:nth-child(1){
+        order:3;
+    }
+    footer section:nth-child(2){
+        order:2;
+    }
+    footer section:nth-child(3){
+        order:1;
+    }
+
     .rights{
         margin: 0px;
+    }
+
+    .social nav ul{
+        margin-right: 0px;
+    }
+
+    .social nav ul li a span{
+        margin: 0px 0px;
     }
 }
