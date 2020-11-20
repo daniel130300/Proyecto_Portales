@@ -172,6 +172,9 @@ section.cards .card .content form{
     margin-bottom: 1.5em;
 }
 
+.cantidad input{
+    text-align: center;
+}
 
 section.cards .card button{
     border: none;
