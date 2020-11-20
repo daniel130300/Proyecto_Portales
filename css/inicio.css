@@ -101,19 +101,94 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
     }
 }
 
+section.cards {
+    display:flex;
+    justify-content: center;
+    margin:1em auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+  
+section.cards h2{
+    box-sizing: border-box;
+    width:100%;
+    text-align: center;
+}
+
+section.cards .card{
+    display: flex;
+    width:500px;
+    height: 320px;
+    margin: 1em 0.5em;
+    border: rgb(128, 128, 128) solid 1px;
+    box-shadow: 3px 3px 5px rgb(128, 128, 128);
+}
+
+section.cards .card img{
+    width: 45%;
+}
+
+section.cards .card .content h3{
+    box-sizing: border-box;
+    text-align: center;
+    width:100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+section.cards .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 
+section.cards .card .content .price p{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+section.cards .card .content p{
+    text-align: center;
+    font-size: 14px;
+    margin: 0px 4px 4px 0px;
+}
+
+.content span{
+    margin-right: 5px;
+}
+
+section.cards .card .content form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cantidad{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+section.cards .card button{
+    border: none;
+    background-color: #035202;
+    font-size: 14px;
+    color:#fff;
+    font-weight: bold;
+    padding: 0.5em 0.5em;
+    box-sizing: border-box;
+    width:100%;
+    box-shadow: 3px 3px 5px rgb(128, 128, 128);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+  
+section.cards .card button:hover{
+    background-color: #147B01;
+    transition: background-color 0.5s ease;
+}
