@@ -1,15 +1,25 @@
 main{
+  background-color: #f5f7fa;
 }
 
 h2{
-  text-align: center;
-  padding: 0px;
+  display: block;
+  padding: 0.6em;
   margin: 0px;
+  box-sizing: border-box;
+  width:100%;
+  text-align: center;
+  background-color: #242424;
+  color: #fff;
 }
 
 .grid{
   display: grid;
   grid-template: auto auto;
+}
+
+.item1{
+  margin-top: 1em;
 }
 
 .item2{
@@ -24,51 +34,58 @@ section.cards {
   display:flex;
   justify-content: center;
   max-width: 100%;
-  margin:1em auto;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding:1em;
+  margin: 0px;
+  padding: 0px;
 }
 
 section.cards h2{
   box-sizing: border-box;
   width:100%;
+  padding: 1em;
 }
 section.cards .card{
   display: flex;
-  width:420px;
+  width:350px;
   margin: 1em 0.5em;
   padding-top: 1em;
   padding-bottom: 1em;
-  border: #000 solid 0.5px;
+  border: rgb(94, 94, 94) solid 1px;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  box-shadow: 3px 3px 5px #000;
+  box-shadow: 3px 3px 5px rgb(94, 94, 94);
   overflow: hidden;
-  height: 35em;
+  height: 32em;
+  transition: all 400ms ease;
+  background-color: rgb(255, 255, 255);
+}
+
+section.cards .card:hover{
+  box-shadow: 5px 5px 20px #333333;
+  transform: translateY(-2%);
 }
 
 section.cards .card img{
-  width:200px;
-  border-radius: 50%;
+  width: 200px;
   
 }
 section.cards .card p{
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0px 4.5px 4.5px 0px;
 }
 
 section.cards .card .price p{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin: 0px;
   padding: .5em;
 }
 
 section.cards .card h3{
-  font-size: 25px;
+  font-size: 22px;
   margin:0px;
   box-sizing: border-box;
   text-align: center;
@@ -89,6 +106,7 @@ section.cards .card h3{
 
 .categorias ul li{
   background-color: #014757;
+  box-shadow: 0px 0px 2px rgb(255, 255, 255);
 }
 
 .categorias ul li a{
@@ -147,6 +165,11 @@ section.cards .card button:hover{
 }
 
 @media (max-width: 800px) {
+  
+  .categorias ul{
+    width: 100vw;
+    text-align: center;
+  }
 
   .item2 {
     grid-row-start: 2;
@@ -155,4 +178,6 @@ section.cards .card button:hover{
     grid-column-start: 1;
     grid-column-end: 1;
   }
+
+
 }
