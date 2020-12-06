@@ -1,0 +1,107 @@
+
+main {
+    display: flex;
+    justify-content: center; /* Centrar de manera horizontal */
+    align-items: center; /* Centrar de manera vertical */
+    background-color: #e6e4e4;
+    padding: 2.5em 0;
+    line-height: 1.5; /* interlineado */
+}
+
+main section {
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-radius: 10px; /* redondeo de las esquinas */
+    width: 80%;
+}
+
+main section h2 {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800;
+    background-image: linear-gradient(150deg,  #012F3A,  #03AED4);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+main section .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+.error{
+    padding: 8px;
+    color:#bb0000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+main section .grupo input, main section .grupo textarea {
+    background: none;
+    color: #a3a3a3;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px; 
+    display: block;
+    width: 100%; /* que tome el 100% del ancho de la section*/
+    border: none; /* quitar los bordes de los inputs */
+    border-bottom: 2px solid #a3a3a3; /* colocar borde inferior de los inputs */
+}
+
+main section .grupo input:focus, main section .grupo textarea:focus {
+    outline: none;
+    color: #a3a3a3; 
+}
+
+main section .grupo input:focus~label,
+main section .grupo input:valid~label,
+main section .grupo textarea:focus~label,
+main section .grupo textarea:valid~label {
+    position: absolute;
+    top: -14px; /* Al posicionarse el label se mueve hacia arriba */
+    font-size: 12px; /* reduce el tamaño del taxto */
+    color: #0286A4;
+}
+
+main section .grupo label {
+    color: #a3a3a3;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+main section .grupo input:focus~.barra, main section .grupo textarea:focus~.barra {
+    width: 100%;
+}
+
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+button {
+    background-color: #035202;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border: none;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+button:hover{
+    background-color: #147B01;
+    transition: background-color 0.5s ease;
+}
