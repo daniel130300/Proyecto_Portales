@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/navbar_footer.css">
-    <link rel="stylesheet" href="./css/servicios.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar_footer.css">
+    <link rel="stylesheet" href="./css/suscripcion.css">
     <script src="https://kit.fontawesome.com/1754d01cd1.js" crossorigin="anonymous"></script>
     <script src="./js/hamburger.js" defer></script>
-    <title>Electricidad</title>
+    <script src="js/validacion_suscripcion.js"></script>
+    <title>Suscripción</title>
 </head>
 <body>
+
     <header>
         <nav class="navbar">
             <div class="brand-title">
                 <img src="./imgs/logo.png" alt="Logo">
                 <h1>FERROSERVI TOTAL</h1>
             </div>
+
             <div class="navbar-links">
                 <ul>
                     <li><a href="inicio.html">Inicio</a></li>
@@ -43,67 +47,40 @@
     </header>
 
     <main>
-        <h2 class="heroh2">Electricidad</h2>
-        <div class="grid">
-            <div class="item1">
-                <section class="categorias">
-                    <nav>
-                        <ul>
-                            <li><a href="fontaneria.html">Fontanería</a></li>
-                            <li><a href="carpinteria.html">Carpintería</a></li>
-                            <li><a href="fletes.html">Fletes</a></li>
-                            <li><a href="electricidad.html">Electricidad</a></li>
-                        </ul>
-                    </nav>
-                </section>
-            </div>
-        <div class="item2">
-                <section class="servicios">
-                    <div class="fontaneria">
-                        <div class="imagen">
-                            <img src="./imgs/servicio.png" alt="">
-                            <div class="relleno">
-                                <h2>Servicio 1</h2>
-                            </div>
-                        </div>
+        <section>
+            <form method="POST" id="formContacto">
+                <h2>Suscripción</h2>
+                <div class="grupo">
+                    <input type="text" name="txtNombre" id="txtNombre" required><span class="barra"></span>
+                    <label>Nombre*</label>
+                    <div id="txtNombreErr" class="error"></div>
+                </div>
+                
+                <div class="grupo">
+                    <input type="tel" name="txtTelefono" id="txtTelefono" required><span class="barra"></span>
+                    <label>Teléfono</label>
+                    <div id="txtTelefonoErr" class="error"></div>
+                </div>
 
-                        <div class="imagen">
-                            <img src="./imgs/servicio.png" alt="">
-                            <div class="relleno">
-                                <h2>Servicio 2</h2>
-                            </div>
-                        </div>
+                <div class="grupo">
+                    <input type="text" name="txtCorreo" id="txtCorreo" required><span class="barra"></span>
+                    <label>Correo Electrónico*</label>
+                    <div id="txtCorreoErr" class="error"></div>
+                </div>
 
-                        <div class="imagen">
-                            <img src="./imgs/servicio.png" alt="">
-                            <div class="relleno">
-                                <h2>Servicio 3</h2>
-                            </div>
-                        </div>
+                <div class="combobox">
+                    <label for="cmbSuscripcion">Tipo de suscripción: </label>
+                    <select class="cmb" id="cmbSuscripcion" name="cmbSuscripcion" required>
+                        <option value="Diaria">Diaria</option>
+                        <option value="Semanal">Semanal</option>
+                        <option value="Mensual">Mensual</option>
+                        <option value="Anual">Anual</option>
+                    </select>
+                </div>
 
-                        <div class="imagen">
-                            <img src="./imgs/servicio.png" alt="">
-                            <div class="relleno">
-                                <h2>Servicio 4</h2>
-                            </div>
-                        </div>
-                        <div class="imagen">
-                            <img src="./imgs/servicio.png" alt="">
-                            <div class="relleno">
-                                <h2>Servicio 5</h2>
-                            </div>
-                        </div>
-                        <div class="imagen">
-                            <img src="./imgs/servicio.png" alt="">
-                            <div class="relleno">
-                                <h2>Servicio 6</h2>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
+                <button type="submit">Suscribirse</button>
+            </form>
+        </section>
     </main>
 
     <footer>
@@ -149,5 +126,6 @@
             </nav>
         </section>
     </footer>
+    
 </body>
 </html>

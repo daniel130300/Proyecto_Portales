@@ -1,18 +1,19 @@
 
 main {
     display: flex;
-    justify-content: center; /* Centrar de manera horizontal */
-    align-items: center; /* Centrar de manera vertical */
+    justify-content: center; 
+    align-items: center; 
     background-color: #e6e4e4;
     padding: 2.5em 0;
-    line-height: 1.5; /* interlineado */
+    line-height: 1.5; 
 }
 
 main section {
     background-color: #ffffff;
     padding: 10px 0;
-    border-radius: 10px; /* redondeo de las esquinas */
+    border-radius: 10px; 
     width: 80%;
+    height: 600px;
 }
 
 main section h2 {
@@ -46,9 +47,9 @@ main section .grupo input, main section .grupo textarea {
     font-size: 18px;
     padding: 10px 10px 10px 5px; 
     display: block;
-    width: 100%; /* que tome el 100% del ancho de la section*/
-    border: none; /* quitar los bordes de los inputs */
-    border-bottom: 2px solid #a3a3a3; /* colocar borde inferior de los inputs */
+    width: 100%; 
+    border: none; 
+    border-bottom: 2px solid #a3a3a3; 
 }
 
 main section .grupo input:focus, main section .grupo textarea:focus {
@@ -61,8 +62,8 @@ main section .grupo input:valid~label,
 main section .grupo textarea:focus~label,
 main section .grupo textarea:valid~label {
     position: absolute;
-    top: -14px; /* Al posicionarse el label se mueve hacia arriba */
-    font-size: 12px; /* reduce el tamaño del taxto */
+    top: -14px;
+    font-size: 12px; 
     color: #0286A4;
 }
 
@@ -87,6 +88,23 @@ main section .grupo input:focus~.barra, main section .grupo textarea:focus~.barr
     width: 100%;
 }
 
+.combobox{
+    display: flex;
+    margin-left: 50px;
+    color: #a3a3a3;
+    font-size: 17px;
+}
+
+.cmb{
+    margin-left: 1em;
+}
+
+.combobox select, option{
+    color: #a3a3a3;
+    border-color: #5f5f5f;
+    font-size: 17px;
+}
+
 button {
     background-color: #035202;
     display: block;
@@ -97,6 +115,7 @@ button {
     border-radius: 4px;
     font-size: 16px;
     margin: 10px auto;
+    margin-top: 70px;
     cursor: pointer;
     transition: background-color 0.5s ease;
 }
@@ -106,6 +125,25 @@ button:hover{
     transition: background-color 0.5s ease;
 }
 
+
+@media screen and (min-width:300px) and (max-width: 500px){
+    
+    main section {
+        height: 620px;
+    }
+    
+    .combobox{
+        font-size: 16px;
+    }
+    
+    .cmb{
+        margin-right: 2em;
+    }
+
+    .combobox select, option{
+        font-size: 12px;
+    }
+}
 
 @media screen and (min-width:700px) and (max-width: 1200px){
     main{
