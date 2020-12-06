@@ -1,0 +1,158 @@
+main{
+}
+
+h2{
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.grid{
+  display: grid;
+  grid-template: auto auto;
+}
+
+.item2{
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+section.cards {
+  display:flex;
+  justify-content: center;
+  max-width: 100%;
+  margin:1em auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding:1em;
+}
+
+section.cards h2{
+  box-sizing: border-box;
+  width:100%;
+}
+section.cards .card{
+  display: flex;
+  width:420px;
+  margin: 1em 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border: #000 solid 0.5px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 5px #000;
+  overflow: hidden;
+  height: 35em;
+}
+
+section.cards .card img{
+  width:200px;
+  border-radius: 50%;
+  
+}
+section.cards .card p{
+  text-align: center;
+  font-size: 16px;
+  margin: 0px 4.5px 4.5px 0px;
+}
+
+section.cards .card .price p{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+  padding: .5em;
+}
+
+section.cards .card h3{
+  font-size: 25px;
+  margin:0px;
+  box-sizing: border-box;
+  text-align: center;
+  width:100%;
+}
+
+.categorias nav{
+  box-sizing: content-box;
+  width: 15%;
+}
+
+.categorias ul{
+  list-style-type: none;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.categorias ul li{
+  background-color: #014757;
+}
+
+.categorias ul li a{
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.categorias ul li a:hover {
+  background: #025F74;
+  color: #fff;
+}
+
+section.cards .card form{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cantidad{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+
+.cantidad input{
+  text-align: center;
+}
+
+section.cards .card button{
+  border: none;
+  background-color: #035202;
+  font-size: 14px;
+  color:#fff;
+  font-weight: bold;
+  padding: 1em 1em;
+  box-sizing: border-box;
+  width:100%;
+  box-shadow: 3px 3px 5px rgb(128, 128, 128);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+section.cards .card button:hover{
+  background-color: #147B01;
+  transition: background-color 0.5s ease;
+}
+
+.card span{
+  margin-right: 5px;
+}
+
+@media (max-width: 800px) {
+
+  .item2 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
