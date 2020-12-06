@@ -2,23 +2,54 @@
 main{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    background-color: #f5f7fa;
 }
 
-main h2{
+.heroh2{
+    display: block;
+    padding: 0.6em;
+    margin: 0px;
+    box-sizing: border-box;
+    width:100%;
     text-align: center;
+    background-color: #242424;
+    color: #fff;
 }
 
+.grid{
+    display: grid;
+    grid-template: auto auto;
+}
+
+.item2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.item1{
+    margin-top: 1em;
+}
+
+.categorias nav{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 .categorias ul{
     list-style-type: none;
     width: 200px;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 .categorias ul li{
     background-color: #014757;
+    box-shadow: 0px 0px 2px rgb(255, 255, 255);
 }
 
 .categorias ul li a{
@@ -41,9 +72,11 @@ main h2{
     display: flex;
     width: 100%;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     border-radius: 3px;
-   
+    padding: 0px;
+    margin: 0px;
 }
 
 .fontaneria .imagen{
@@ -84,13 +117,31 @@ main h2{
   cursor: pointer;
 }
 
-@media (max-width: 460px){
+@media screen and (min-width:300px) and (max-width: 500px){
     .fontaneria{ 
         flex-direction: column; 
+        
     }
 
     .fontaneria .imagen{
         width: 85%;
+    }
+
+    .item2 {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        
+        grid-column-start: 1;
+        grid-column-end: 1;
+      }
+      .categorias ul{
+        width: 100vw;
+        text-align: center;
       }
 }
 
+@media screen and (min-width:700px) and (max-width: 1400px){
+    main{
+        height: 85vh;
+    }
+}
