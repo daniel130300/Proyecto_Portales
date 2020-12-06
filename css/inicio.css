@@ -1,3 +1,7 @@
+main{
+    background-color: #f0f0e9;
+}
+
 .slideshow{
     display: flex;
     position: relative;
@@ -104,15 +108,19 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
 section.cards {
     display:flex;
     justify-content: center;
-    margin:1em auto;
     align-items: flex-start;
     flex-wrap: wrap;
 }
   
 section.cards h2{
+    display: block;
+    padding: 1em;
+    margin: 0px;
     box-sizing: border-box;
     width:100%;
     text-align: center;
+    background-color: #242424;
+    color: #fff;
 }
 
 section.cards .card{
@@ -122,6 +130,12 @@ section.cards .card{
     margin: 1em 0.5em;
     border: rgb(128, 128, 128) solid 1px;
     box-shadow: 3px 3px 5px rgb(128, 128, 128);
+    transition: all 400ms ease;
+}
+
+section.cards .card:hover{
+    box-shadow: 5px 5px 20px #333333;
+    transform: translateY(-3%);
 }
 
 section.cards .card img{
