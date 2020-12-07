@@ -4,6 +4,23 @@ main {
     line-height: 1.5;
 }
 
+h2{
+  display: block;
+  padding: 0.6em;
+  margin: 0px;
+  box-sizing: border-box;
+  width:100%;
+  text-align: center;
+  background-color: #242424;
+  color: #fff;
+}
+
+h3{
+
+  text-align: center;
+
+}
+
 .row {
     width: 100%;
     display: flex;
@@ -11,14 +28,15 @@ main {
     padding: 1em 2em;
     margin: 0px;
     flex-wrap: wrap;
-    background-color: #1BAC02;
+    background-color: #f5f7fa;
   }
   
   .row.reverse {
     flex-direction: row-reverse;
-    background-color: #014757;
+    background-color: #bfe2fc;
     
   }
+
 
   .row.tittle { 
     background-color: #ffffff;
