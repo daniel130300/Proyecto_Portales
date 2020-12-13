@@ -5,7 +5,7 @@ var validators =
     "correo":  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
     "vacio": /^\s*$/,
     "doble_espacio":/\s{2,}/
-  };
+};
 
 var formInputs = 
 {
