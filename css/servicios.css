@@ -127,6 +127,10 @@ main{
         width: 85%;
     }
 
+    .item1{
+        display: none;
+    }
+
     .item2 {
         grid-row-start: 2;
         grid-row-end: 2;
@@ -140,7 +144,19 @@ main{
       }
 }
 
-@media screen and (min-width:700px) and (max-width: 1200px){
+@media screen and (min-width:768px) and (max-width: 1000px){
+
+    main{
+        height: 85vh;
+    }
+
+    .item1{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width: 1200px){
+
     main{
         height: 85vh;
     }
