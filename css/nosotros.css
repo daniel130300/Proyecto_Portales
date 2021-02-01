@@ -57,53 +57,10 @@ h3{
     padding: 0.5em 0.5em;
     margin: 0px;
   }
-  
-  .col-sm-1 {
-    flex-basis: calc(100%/12);
-  }
-  
-  .col-sm-2 {
-    flex-basis: calc(100%/6);
-  }
-  
-  .col-sm-3 {
-    flex-basis: calc(100%/4);
-  }
-  
-  .col-sm-4 {
-    flex-basis: calc(100%/3);
-  }
-  
-  .col-sm-5 {
-    flex-basis: calc(100%/12 * 5);
-  }
+ 
   
   .col-sm-6 {
     flex-basis: calc(100%/2);
-  }
-  
-  .col-sm-7 {
-    flex-basis: calc(100%/12 * 7);
-  }
-  
-  .col-sm-8 {
-    flex-basis: calc(100%/12 * 8);
-  }
-  
-  .col-sm-9 {
-    flex-basis: calc(100%/12 * 9);
-  }
-  
-  .col-sm-10 {
-    flex-basis: calc(100%/12 * 10);
-  }
-  
-  .col-sm-11 {
-    flex-basis: calc(100%/12 * 11);
-  }
-  
-  .col-sm-12 {
-    flex-basis: 100%;
   }
   
   img {
